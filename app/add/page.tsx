@@ -103,7 +103,7 @@ export default function AddBusinessPage() {
             <div className="md:col-span-2">
               <label htmlFor="name" className="block text-sm font-medium text-slate-600 mb-2">
                 {add.form.fields.name.label}{' '}
-                <span className="text-[#540619]">*</span>
+                <span className="text-brand">*</span>
               </label>
               <input
                 type="text"
@@ -113,7 +113,7 @@ export default function AddBusinessPage() {
                 minLength={2}
                 value={formData.name}
                 onChange={handleChange}
-                className="w-full px-4 py-3 bg-white border border-slate-200 rounded-xl text-slate-900 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-[#540619]/50 transition-all"
+                className="w-full px-4 py-3 bg-white border border-slate-200 rounded-xl text-slate-900 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-brand/50 transition-all"
                 placeholder={add.form.fields.name.placeholder}
               />
             </div>
@@ -121,7 +121,7 @@ export default function AddBusinessPage() {
             <div>
               <label htmlFor="category" className="block text-sm font-medium text-slate-600 mb-2">
                 {add.form.fields.category.label}{' '}
-                <span className="text-[#540619]">*</span>
+                <span className="text-brand">*</span>
               </label>
               <select
                 id="category"
@@ -129,7 +129,7 @@ export default function AddBusinessPage() {
                 required
                 value={formData.category}
                 onChange={handleChange}
-                className="w-full px-4 py-3 bg-white border border-slate-200 rounded-xl text-slate-900 focus:outline-none focus:ring-2 focus:ring-[#540619]/50 transition-all appearance-none cursor-pointer"
+                className="w-full px-4 py-3 bg-white border border-slate-200 rounded-xl text-slate-900 focus:outline-none focus:ring-2 focus:ring-brand/50 transition-all appearance-none cursor-pointer"
               >
                 {BUSINESS_CATEGORIES.map((category) => (
                   <option key={category} value={category} className="bg-white text-slate-900">
@@ -142,7 +142,7 @@ export default function AddBusinessPage() {
             <div>
               <label htmlFor="phone" className="block text-sm font-medium text-slate-600 mb-2">
                 {add.form.fields.phone.label}{' '}
-                <span className="text-[#540619]">*</span>
+                <span className="text-brand">*</span>
               </label>
               <input
                 type="tel"
@@ -151,7 +151,7 @@ export default function AddBusinessPage() {
                 required
                 value={formData.phone}
                 onChange={handleChange}
-                className="w-full px-4 py-3 bg-white border border-slate-200 rounded-xl text-slate-900 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-[#540619]/50 transition-all"
+                className="w-full px-4 py-3 bg-white border border-slate-200 rounded-xl text-slate-900 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-brand/50 transition-all"
                 placeholder={add.form.fields.phone.placeholder}
               />
             </div>
@@ -159,7 +159,7 @@ export default function AddBusinessPage() {
             <div className="md:col-span-2">
               <label htmlFor="description" className="block text-sm font-medium text-slate-600 mb-2">
                 {add.form.fields.description.label}{' '}
-                <span className="text-[#540619]">*</span>
+                <span className="text-brand">*</span>
               </label>
               <textarea
                 id="description"
@@ -169,7 +169,7 @@ export default function AddBusinessPage() {
                 rows={4}
                 value={formData.description}
                 onChange={handleChange}
-                className="w-full px-4 py-3 bg-white border border-slate-200 rounded-xl text-slate-900 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-[#540619]/50 transition-all resize-none"
+                className="w-full px-4 py-3 bg-white border border-slate-200 rounded-xl text-slate-900 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-brand/50 transition-all resize-none"
                 placeholder={add.form.fields.description.placeholder}
               />
               <p className="text-xs text-slate-500 mt-1">
@@ -180,7 +180,7 @@ export default function AddBusinessPage() {
             <div className="md:col-span-2">
               <label htmlFor="address" className="block text-sm font-medium text-slate-600 mb-2">
                 {add.form.fields.address.label}{' '}
-                <span className="text-[#540619]">*</span>
+                <span className="text-brand">*</span>
               </label>
               <input
                 type="text"
@@ -190,7 +190,7 @@ export default function AddBusinessPage() {
                 minLength={5}
                 value={formData.address}
                 onChange={handleChange}
-                className="w-full px-4 py-3 bg-white border border-slate-200 rounded-xl text-slate-900 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-[#540619]/50 transition-all"
+                className="w-full px-4 py-3 bg-white border border-slate-200 rounded-xl text-slate-900 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-brand/50 transition-all"
                 placeholder={add.form.fields.address.placeholder}
               />
             </div>
@@ -198,7 +198,7 @@ export default function AddBusinessPage() {
             <div>
               <label htmlFor="email" className="block text-sm font-medium text-slate-600 mb-2">
                 {add.form.fields.email.label}{' '}
-                <span className="text-[#540619]">*</span>
+                <span className="text-brand">*</span>
               </label>
               <input
                 type="email"
@@ -207,7 +207,7 @@ export default function AddBusinessPage() {
                 required
                 value={formData.email}
                 onChange={handleChange}
-                className="w-full px-4 py-3 bg-white border border-slate-200 rounded-xl text-slate-900 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-[#540619]/50 transition-all"
+                className="w-full px-4 py-3 bg-white border border-slate-200 rounded-xl text-slate-900 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-brand/50 transition-all"
                 placeholder={add.form.fields.email.placeholder}
               />
             </div>
@@ -223,7 +223,7 @@ export default function AddBusinessPage() {
                 name="website"
                 value={formData.website}
                 onChange={handleChange}
-                className="w-full px-4 py-3 bg-white border border-slate-200 rounded-xl text-slate-900 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-[#540619]/50 transition-all"
+                className="w-full px-4 py-3 bg-white border border-slate-200 rounded-xl text-slate-900 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-brand/50 transition-all"
                 placeholder={add.form.fields.website.placeholder}
               />
             </div>
@@ -233,7 +233,7 @@ export default function AddBusinessPage() {
             <button
               type="submit"
               disabled={isSubmitting}
-              className="w-full bg-[#540619] text-white py-4 px-8 rounded-xl font-semibold text-lg transition-all duration-300 hover:bg-[#6d0822] hover:scale-[1.02] hover:shadow-xl hover:shadow-[#540619]/30 disabled:opacity-50 disabled:cursor-not-allowed"
+              className="w-full bg-brand text-white py-4 px-8 rounded-xl font-semibold text-lg transition-all duration-300 hover:bg-brand-hover hover:scale-[1.02] hover:shadow-xl hover:shadow-brand/30 disabled:opacity-50 disabled:cursor-not-allowed"
             >
               {isSubmitting ? (
                 <span className="flex items-center justify-center gap-3">
