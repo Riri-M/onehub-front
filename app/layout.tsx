@@ -38,7 +38,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body
-        className={`${montserrat.variable} ${playfairDisplay.variable} ${playfairDisplayItalic.variable} antialiased min-h-screen bg-[#f6f4f0] text-black font-sans`}
+        className={`${montserrat.variable} ${playfairDisplay.variable} ${playfairDisplayItalic.variable} antialiased min-h-screen bg-surface text-black font-sans`}
       >
         <Suspense fallback={null}>
           <NavWrapper />

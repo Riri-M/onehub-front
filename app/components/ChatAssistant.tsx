@@ -45,7 +45,7 @@ export function ChatAssistant() {
       <button
         type="button"
         onClick={() => setOpen((o) => !o)}
-        className="fixed bottom-6 right-6 z-40 flex h-14 w-14 items-center justify-center rounded-full bg-[#540619] text-white shadow-lg shadow-[#540619]/30 transition-all hover:bg-[#6d0822] hover:scale-105 hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-[#540619] focus:ring-offset-2 focus:ring-offset-[#f6f4f0]"
+        className="fixed bottom-6 right-6 z-40 flex h-14 w-14 items-center justify-center rounded-full bg-brand text-white shadow-lg shadow-brand/30 transition-all hover:bg-brand-hover hover:scale-105 hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-brand focus:ring-offset-2 focus:ring-offset-surface"
         aria-label={open ? chat.closeAriaLabel : chat.openAriaLabel}
       >
         {open ? (
@@ -66,8 +66,8 @@ export function ChatAssistant() {
         }`}
         aria-hidden={!open}
       >
-        <div className="flex items-center gap-2 border-b border-slate-200 bg-[#f6f4f0] px-4 py-3">
-          <div className="flex h-9 w-9 items-center justify-center rounded-full bg-[#540619] text-white">
+        <div className="flex items-center gap-2 border-b border-slate-200 bg-surface px-4 py-3">
+          <div className="flex h-9 w-9 items-center justify-center rounded-full bg-brand text-white">
             <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
             </svg>
@@ -83,7 +83,7 @@ export function ChatAssistant() {
             <div key={i} className={`flex ${m.role === 'user' ? 'justify-end' : 'justify-start'}`}>
               <div
                 className={`max-w-[85%] rounded-2xl px-4 py-2.5 text-sm ${
-                  m.role === 'user' ? 'bg-[#540619] text-white' : 'bg-slate-100 text-slate-800'
+                  m.role === 'user' ? 'bg-brand text-white' : 'bg-slate-100 text-slate-800'
                 }`}
               >
                 {m.content}
@@ -111,12 +111,12 @@ export function ChatAssistant() {
               value={input}
               onChange={(e) => setInput(e.target.value)}
               placeholder={chat.inputPlaceholder}
-              className="flex-1 rounded-xl border border-slate-200 bg-[#f6f4f0] px-4 py-2.5 text-sm text-slate-900 placeholder-slate-400 focus:border-[#540619] focus:outline-none focus:ring-1 focus:ring-[#540619]"
+              className="flex-1 rounded-xl border border-slate-200 bg-surface px-4 py-2.5 text-sm text-slate-900 placeholder-slate-400 focus:border-brand focus:outline-none focus:ring-1 focus:ring-brand"
               aria-label={chat.inputAriaLabel}
             />
             <button
               type="submit"
-              className="rounded-xl bg-[#540619] px-4 py-2.5 text-white transition-colors hover:bg-[#6d0822] focus:outline-none focus:ring-2 focus:ring-[#540619] focus:ring-offset-2 disabled:opacity-50"
+              className="rounded-xl bg-brand px-4 py-2.5 text-white transition-colors hover:bg-brand-hover focus:outline-none focus:ring-2 focus:ring-brand focus:ring-offset-2 disabled:opacity-50"
               aria-label={chat.sendAriaLabel}
             >
               <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">

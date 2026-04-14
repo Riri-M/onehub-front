@@ -63,7 +63,7 @@ export default async function HomePage({
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
                 href="#businesses"
-                className="group inline-flex items-center justify-center gap-2 bg-white text-slate-900 px-8 py-4 rounded-full font-semibold transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-white/25"
+                className="group inline-flex items-center justify-center gap-2 bg-white text-slate-900 px-8 py-4 rounded-full font-semibold transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-white/25 border border-slate-200"
               >
                 {home.hero.cta.explore}
                 <svg
@@ -158,7 +158,7 @@ export default async function HomePage({
 
       {/* CTA */}
       <section className="py-20 relative overflow-hidden">
-        <div className="absolute inset-0 bg-[#540619]/20" />
+        <div className="absolute inset-0 bg-brand/20" />
         <div className="absolute inset-0 backdrop-blur-3xl" />
 
         <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -170,7 +170,7 @@ export default async function HomePage({
           </p>
           <a
             href="/add"
-            className="inline-flex items-center justify-center gap-2 bg-[#540619] text-white px-10 py-4 rounded-full font-semibold text-lg transition-all duration-300 hover:bg-[#6d0822] hover:scale-105 shadow-lg shadow-[#540619]/50 hover:shadow-[#540619]/70"
+            className="inline-flex items-center justify-center gap-2 bg-brand text-white px-10 py-4 rounded-full font-semibold text-lg transition-all duration-300 hover:bg-brand-hover hover:scale-105 shadow-lg shadow-brand/50 hover:shadow-brand/70"
           >
             {home.cta.button}
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">

@@ -7,9 +7,9 @@ interface BusinessCardProps {
 const categoryStyles: Record<BusinessCategory, string> = {
   Restaurant: 'bg-orange-500/20 text-orange-700 border-orange-500/30',
   Cafe: 'bg-amber-500/20 text-amber-700 border-amber-500/30',
-  Retail: 'bg-[#540619]/20 text-[#540619] border-[#540619]/30',
+  Retail: 'bg-brand/20 text-brand border-brand/30',
   Services: 'bg-emerald-500/20 text-emerald-700 border-emerald-500/30',
-  Technology: 'bg-[#540619]/20 text-[#540619] border-[#540619]/30',
+  Technology: 'bg-brand/20 text-brand border-brand/30',
   Healthcare: 'bg-rose-500/20 text-rose-700 border-rose-500/30',
   Education: 'bg-violet-500/20 text-violet-700 border-violet-500/30',
   Entertainment: 'bg-pink-500/20 text-pink-700 border-pink-500/30',
@@ -21,7 +21,7 @@ export function BusinessCard({ business }: BusinessCardProps) {
 
   return (
     <article className="group relative glass rounded-xl overflow-hidden hover:bg-white transition-all duration-300 hover:scale-[1.02] shadow-sm hover:shadow-md">
-      <div className="absolute inset-0 rounded-xl bg-[#540619]/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10 blur-sm" />
+      <div className="absolute inset-0 rounded-xl bg-brand/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10 blur-sm" />
 
       <div className="p-3 relative">
         <header className="mb-2">
@@ -51,7 +51,7 @@ export function BusinessCard({ business }: BusinessCardProps) {
             <svg className="w-3 h-3 text-slate-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
             </svg>
-            <a href={`tel:${business.phone}`} className="text-slate-600 hover:text-[#540619] transition-colors truncate">
+            <a href={`tel:${business.phone}`} className="text-slate-600 hover:text-brand transition-colors truncate">
               {business.phone}
             </a>
           </div>
@@ -65,7 +65,7 @@ export function BusinessCard({ business }: BusinessCardProps) {
                 href={business.website}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-[#540619] hover:text-[#6d0822] transition-colors truncate"
+                className="text-brand hover:text-brand-hover transition-colors truncate"
               >
                 Website
               </a>
