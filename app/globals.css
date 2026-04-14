@@ -1,0 +1,90 @@
+@import "tailwindcss";
+
+:root {
+	--background: #f6f4f0;
+	--foreground: #000000;
+	--secondary: #540619;
+	--secondary-hover: #6d0822;
+}
+
+@theme inline {
+	--color-background: var(--background);
+	--color-foreground: var(--foreground);
+	--color-secondary: var(--secondary);
+	--font-sans: var(--font-montserrat), system-ui, sans-serif;
+	--font-display: var(--font-playfair-display), Georgia, serif;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background: #f6f4f0;
+	background-attachment: fixed;
+	color: var(--foreground);
+	font-family: var(--font-montserrat), system-ui, sans-serif;
+}
+
+/* Headings use Playfair Display */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: var(--font-playfair-display), Georgia, serif;
+	font-weight: 400;
+}
+
+/* Logo wordmark: "one" = Playfair Display italic, "hub" = Montserrat, black */
+.logo-wordmark-one {
+	font-family: var(--font-playfair-display-italic), Georgia, serif;
+	font-weight: 400;
+	font-style: italic;
+	color: #000000;
+}
+.logo-wordmark-hub {
+	font-family: var(--font-montserrat), system-ui, sans-serif;
+	font-weight: 400;
+	color: #000000;
+	letter-spacing: -0.17em;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+	width: 8px;
+}
+
+::-webkit-scrollbar-track {
+	background: rgba(0, 0, 0, 0.05);
+}
+
+::-webkit-scrollbar-thumb {
+	background: rgba(84, 6, 25, 0.5);
+	border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: rgba(84, 6, 25, 0.7);
+}
+
+/* Glass morphism utility */
+.glass {
+	background: rgba(255, 255, 255, 0.7);
+	backdrop-filter: blur(10px);
+	border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+/* Glow effects */
+.glow {
+	box-shadow: 0 0 20px rgba(84, 6, 25, 0.3);
+}
+
+/* Text gradient */
+.text-gradient {
+	background: linear-gradient(135deg, #540619 0%, #7a0a24 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+}
