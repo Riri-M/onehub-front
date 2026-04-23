@@ -1,4 +1,4 @@
-import { Metadata } from 'next';
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import { businessService } from '@/lib/services/business.service';
 import { BusinessList } from '@/app/components/BusinessList';
