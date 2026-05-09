@@ -1,3 +1,5 @@
+import type { CreateBusinessDTO } from '@/lib/types/business.types';
+
 export const add = {
   meta: {
     title: 'Add Your Business | onehub',
@@ -48,8 +50,6 @@ export const add = {
     disclaimer: 'Free to join • No credit card required • Reviewed before publishing',
   },
 } as const;
-
-import type { CreateBusinessDTO } from '@/lib/types/business.types';
 
 export const formBoldFieldNames = {
   name: 'business_name',
